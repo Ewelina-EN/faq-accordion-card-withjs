@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
-- Live Site URL: [FAQ with JavaScript](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Ewelina-EN/faq-accordion-card-withjs)
+- Live Site URL: [FAQ with JavaScript](https://ewelina-en.github.io/faq-accordion-card-withjs/)
 
 ## My process
 
