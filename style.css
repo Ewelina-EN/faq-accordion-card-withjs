@@ -44,3 +44,22 @@ Background gradient:
 
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
 - Weights: 400, 700 */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  height: 100vh;
+}
+
+.attribution {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution_link {
+  text-decoration: none;
+}
