@@ -18,7 +18,7 @@
     <title>Frontend Mentor | FAQ Accordion Card with JavaScript</title>
   </head>
   <body>
-    <main class="container">
+    <main class="faq">
       <div class="faq_logo_section">
         <div class="faq_logo">
           <img
@@ -26,15 +26,20 @@
             alt="woman at a computer"
             class="faq_logo_img hidden"
           />
+          <img
+            src="./images/illustration-box-desktop.svg"
+            alt=""
+            class="faq_logo_img visible"
+          />
         </div>
       </div>
       <div class="faq_section">
-        <h1>FAQ</h1>
+        <h1 class="faq_heading">FAQ</h1>
         <section class="faq_details">
-          <div class="faq_first">
+          <div class="faq_btn">
             <button class="faq_question">
               How many team members can I invite?
-              <img src="images/icon-arrow-down.svg" />
+              <img src="images/icon-arrow-down.svg" class="arrow" />
             </button>
             <div class="faq_answer">
               <p>
@@ -43,9 +48,7 @@
               </p>
             </div>
           </div>
-
-          <hr class="hr_line" />
-          <div class="faq_second">
+          <div class="faq_btn">
             <button class="faq_question">
               What is the maximum file upload size?<img
                 src="images/icon-arrow-down.svg"
@@ -58,8 +61,7 @@
               </p>
             </div>
           </div>
-          <hr class="hr_line" />
-          <div class="faq_third">
+          <div class="faq_btn">
             <button class="faq_question">
               How do I reset my password?<img
                 src="images/icon-arrow-down.svg"
@@ -72,8 +74,7 @@
               </p>
             </div>
           </div>
-          <hr class="hr_line" />
-          <div class="faq_fourth">
+          <div class="faq_btn">
             <button class="faq_question">
               Can I cancel my subscription?<img
                 src="images/icon-arrow-down.svg"
@@ -86,8 +87,7 @@
               </p>
             </div>
           </div>
-          <hr class="hr_line" />
-          <div class="faq_fifth">
+          <div class="faq_btn">
             <button class="faq_question">
               Do you provide additional support?<img
                 src="images/icon-arrow-down.svg"
@@ -100,7 +100,6 @@
               </p>
             </div>
           </div>
-          <hr class="hr_line" />
         </section>
       </div>
     </main>
