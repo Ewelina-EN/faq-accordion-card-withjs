@@ -1,50 +1,3 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-#### Text
-
-- Very dark desaturated blue: hsl(238, 29%, 16%)
-- Soft red: hsl(14, 88%, 65%)
-
-#### Gradient
-
-Background gradient:
-
-- Soft violet: hsl(273, 75%, 66%)
-- Soft blue: hsl(240, 73%, 65%)
-
-### Neutral
-
-#### Text
-
-- Very dark grayish blue: hsl(237, 12%, 33%)
-- Dark grayish blue: hsl(240, 6%, 50%)
-
-#### Dividers
-
-- Light grayish blue: hsl(240, 5%, 91%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 12px
-
-### Font
-
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700 */
-
 body {
   display: flex;
   flex-direction: column;
@@ -55,18 +8,6 @@ body {
   height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
 }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 900px;
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
-  border-radius: 25px;
-}
-
 .attribution {
   padding-top: 20px;
   text-align: center;
@@ -77,57 +18,149 @@ body {
   text-decoration: none;
 }
 
-.hr_link {
-  border: 1px solid hsl(240, 6%, 50%);
+.faq {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 150px 5% 5% 5%;
+  min-width: 320px;
+  max-width: 320px;
+}
+
+.faq_logo {
+  background: url(./images/bg-pattern-mobile.svg) center bottom no-repeat;
+  background-color: transparent;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 0;
+  margin-top: -157px;
+}
+
+.faq_logo_img {
+  margin-left: -13px;
+  margin-bottom: 13px;
+}
+
+.faq_heading {
+  color: hsl(238, 29%, 16%);
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+
+.faq_details {
+  margin: 20px 0 20px;
+}
+.faq_btn {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
 .faq_question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   cursor: pointer;
-  padding: 18px;
+  padding: 15px 15px 15px 0;
   width: 100%;
-  text-align: left;
+  text-align: justify;
   border: none;
   outline: none;
   transition: 0.4s;
+  font-size: 15px;
 }
 
 .active,
 .faq_question:hover {
   background-color: white;
+  font-weight: bold;
 }
 
 .faq_answer {
-  padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
 }
-
-.faq_logo_section {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-}
-
-.faq_section {
-  margin: 0 50px 0 0;
-  padding: 30px 0;
-  max-width: 350px;
-  width: 350px;
-}
-
-.faq_logo {
-  display: flex;
-  align-items: center;
-  background-position: -75px center, -571px -270px;
-  background-size: 100%, 200%;
-  height: 100%;
-  min-width: 300px;
-  margin: 0;
+p {
+  font-size: 13px;
+  margin-bottom: 15px;
   padding: 0;
-  width: 525px;
-  max-width: 500px;
-  position: relative;
+}
+
+.hidden {
+  display: block;
+}
+
+.visible {
+  display: none;
+}
+
+.hr_line {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+@media (min-width: 900px) {
+  .faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 900px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .faq_logo_section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .faq_section {
+    margin: 0 50px 0 0;
+    padding: 30px 0;
+    max-width: 350px;
+    width: 350px;
+  }
+
+  .faq_logo {
+    display: flex;
+    align-items: center;
+    background-image: url(./images/illustration-woman-online-desktop.svg),
+      url(./images/bg-pattern-desktop.svg);
+    background-position: -75px center, -571px -270px;
+    background-size: 100%, 200%;
+    height: 100%;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+    width: 525px;
+    max-width: 500px;
+    position: relative;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+    position: absolute;
+    margin-top: 120px;
+    left: -80px;
+  }
+
+  .faq_heading {
+    text-align: left;
+  }
+
+  .faq_details {
+    margin: 10px 0 0 0 0;
+    padding: 0;
+  }
+
+  .faq_answer {
+    margin: 20px 0 20px 0;
+    font-size: 14px;
+  }
 }
