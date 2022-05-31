@@ -52,6 +52,11 @@ body {
   align-items: center;
   background: linear-gradient(-180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  display: flex;
 }
 
 .attribution {
@@ -62,4 +67,30 @@ body {
 
 .attribution_link {
   text-decoration: none;
+}
+
+.hr_link {
+  border: 1px solid hsl(240, 6%, 50%);
+}
+
+.faq_question {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.faq_question:hover {
+  background-color: white;
+}
+
+.faq_answer {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
